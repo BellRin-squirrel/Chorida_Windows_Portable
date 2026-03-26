@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>歌詞 - Chordia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/theme_head.js"></script>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column;
+            height: 100vh; overflow: hidden;
+            background-color: #fff;
+        }
+        .lyrics-container {
+            flex: 1; padding: 40px 30px;
+            overflow-y: auto; text-align: center;
+        }
+        .lyrics-header { margin-bottom: 40px; flex-shrink: 0; }
+        .song-title { font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+        .song-artist { font-size: 1.1rem; color: var(--text-sub); }
+        .lyrics-body {
+            font-size: 1.25rem; line-height: 2.5;
+            color: var(--text-main); white-space: pre-wrap;
+            padding-bottom: 60px;
+        }
+        .no-lyrics { color: #9ca3af; font-style: italic; margin-top: 100px; }
+    </style>
+</head>
+<body>
+    <div class="lyrics-container">
+        <div class="lyrics-header">
+            <div id="songTitle" class="song-title">楽曲未選択</div>
+            <div id="songArtist" class="song-artist">--</div>
+        </div>
+        <div id="lyricsBody" class="lyrics-body"></div>
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="js/lyrics.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
